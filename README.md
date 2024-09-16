@@ -184,6 +184,4 @@ Path found: ['A', 'E', 'D', 'G']
 <hr>
 <h2>RESULT:</h2>
 <hr>
-```
 A * Search algorithm for a Graph using Python 3 is successfully implemented.
-```

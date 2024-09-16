@@ -49,10 +49,8 @@
     end (while loop)
 
 ``````
-<hr>
-<h2>PROGRAM</h2>
-<hr>
-```
+<H3>PROGRAM:</H3>
+``````
 from collections import defaultdict
 H_dist ={}
 def aStarAlgo(start_node, stop_node):
@@ -62,10 +60,8 @@ def aStarAlgo(start_node, stop_node):
     parents = {}         # parents contains an adjacency map of all nodes
     #distance of starting node from itself is zero
     g[start_node] = 0
-
 #start_node is root node i.e it has no parent nodes
 #so start_node is set to its own parent node
-
 parents[start_node] = start_node
 while len(open_set) > 0:
     n = None
@@ -97,11 +93,9 @@ while len(open_set) > 0:
                         open_set.add(m)
     if n == None:
         print('Path does not exist!')
-        return None
-        
+        return None       
 # if the current node is the stop_node
 # then we begin reconstructin the path from it to the start_node
-
     if n == stop_node:
         path = []
         while parents[n] != n:
@@ -117,7 +111,7 @@ while len(open_set) > 0:
     closed_set.add(n)
 print('Path does not exist!')
 return None
-```
+``````
 <hr>
 <h2>Sample Graph I</h2>
 <hr>
